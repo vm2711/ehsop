@@ -12,9 +12,10 @@ const DashboardHeader = () => {
     <div className="w-full h-[80px] bg-white shadow sticky top-0 left-0 z-30 flex items-center justify-between px-4">
       <div>
         <Link to="/dashboard">
-          <img
-            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+          <img className="cursor-pointer w-full h-[5rem] items-center justify-between"
+            src="https://shopmen.vercel.app/static/media/havilogo.5124b9d9bc247c333c1b.png"
             alt=""
+            
           />
         </Link>
       </div>

@@ -37,17 +37,17 @@ const Footer = () => {
       <div className="grid grid-cols-1 sm:gird-cols-3 lg:grid-cols-4 gap-6 sm:px-8 px-5 py-16 sm:text-center">
         <ul className="px-5 text-center sm:text-start flex sm:block flex-col items-center">
           <img
-            src="https://shopmen.vercel.app/static/media/havilogo.5124b9d9bc247c333c1b.png"
+            src="https://res.cloudinary.com/ddf5elful/image/upload/v1712255705/havifooter_qgxpfv.png"
             alt=""
             // style={{ filter: "brightness(0) invert(1)" }}
           />
           <br />
-          <p>The home and elements needed to create beautiful products.</p>
+          <p>Find us on: </p>
           <div className="flex items-center mt-[15px]">
             <a href="https://www.facebook.com/YourFacebookPage" target="_blank" rel="noopener noreferrer"><AiFillFacebook size={25} className="cursor-pointer" style={{ transition: "color 0.3s ease", color: "#3b5998" }} /></a>
-            <a href="https://twitter.com/YourTwitterPage" target="_blank" rel="noopener noreferrer"><AiOutlineTwitter size={25} style={{ marginLeft: "15px", cursor: "pointer", transition: "color 0.3s ease", color: "#1da1f2" }} /></a>
+            {/* <a href="https://twitter.com/YourTwitterPage" target="_blank" rel="noopener noreferrer"><AiOutlineTwitter size={25} style={{ marginLeft: "15px", cursor: "pointer", transition: "color 0.3s ease", color: "#1da1f2" }} /></a> */}
             <a href="https://www.instagram.com/YourInstagramPage" target="_blank" rel="noopener noreferrer"><AiFillInstagram size={25} style={{ marginLeft: "15px", cursor: "pointer", transition: "color 0.3s ease", color: "#c13584" }} /></a>
-            <a href="https://www.youtube.com/YourYoutubePage" target="_blank" rel="noopener noreferrer"><AiFillYoutube size={25} style={{ marginLeft: "15px", cursor: "pointer", transition: "color 0.3s ease", color: "#ff0000" }} /></a>
+            {/* <a href="https://www.youtube.com/YourYoutubePage" target="_blank" rel="noopener noreferrer"><AiFillYoutube size={25} style={{ marginLeft: "15px", cursor: "pointer", transition: "color 0.3s ease", color: "#ff0000" }} /></a> */}
           </div>
         </ul>
 
@@ -101,14 +101,14 @@ const Footer = () => {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
          text-center pt-2 text-gray-400 text-sm pb-8"
       >
+        <span></span>
         <span>© 2024 Havi Fashion. All rights reserved.</span>
-        <span>Terms · Privacy Policy</span>
-        <div className="sm:block flex items-center justify-center w-full">
+        {/* <div className="sm:block flex items-center justify-center w-full">
           <img
             src="https://hamart-shop.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffooter-payment.a37c49ac.png&w=640&q=75"
             alt=""
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

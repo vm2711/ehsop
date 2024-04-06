@@ -25,6 +25,8 @@ const Cart = ({ setOpenCart }) => {
     dispatch(addTocart(data));
   };
 
+  const checkoutLink = cart.length > 0 ? "/checkout" : "#";
+
   return (
     <div className="fixed top-0 left-0 w-full h-full bg-[#0000004b] z-50 flex items-center justify-center">
       <div className="w-full h-full max-w-[800px] bg-white flex flex-col overflow-y-scroll justify-between shadow-sm rounded-lg">
@@ -62,10 +64,10 @@ const Cart = ({ setOpenCart }) => {
           )}
         </div>
         <div className="px-5 mb-3">
-          <Link to="/checkout">
-            <div className="h-[45px] flex items-center justify-center w-full bg-[#e44343] rounded-[5px]">
+          <Link to={checkoutLink}>
+            <div className={`h-[45px] flex items-center justify-center w-full rounded-[5px] ${cart.length === 0 ? 'bg-gray-400' : 'bg-[#e44343]'}`}>
               <h1 className="text-[#fff] text-[18px] font-[600]">
-                Checkout Now ({"₹" + totalPrice})
+                {cart.length === 0 ? 'Cart is empty' : `Checkout Now (₹${totalPrice})`}
               </h1>
             </div>
           </Link>
@@ -128,12 +130,12 @@ const CartSingle = ({ data, quantityChangeHandler, removeFromCartHandler }) => {
             { "₹"+ totalPrice}
           </h4>
         </div>
-        <div className="ml-auto"> {/* Added class "ml-auto" for margin-left:auto */}
-        <RxCross1
-          className="cursor-pointer"
-          onClick={() => removeFromCartHandler(data)}
-        />
-      </div>
+        <div className="ml-auto">
+          <RxCross1
+            className="cursor-pointer"
+            onClick={() => removeFromCartHandler(data)}
+          />
+        </div>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ const AdminHeader = () => {
       <div>
         <Link to="/">
           <img
-            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+            src="https://shopmen.vercel.app/static/media/havilogo.5124b9d9bc247c333c1b.png"
             alt=""
           />
         </Link>
